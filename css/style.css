@@ -1,0 +1,194 @@
+@import "reset.css";
+@import "variables.css";
+@import "font.css";
+/* components */
+/* screens */
+@import "screens/login.css";
+@import "screens/todo.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  box-sizing: border-box;
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  font-family: "clovar";
+}
+
+body > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: fill;
+  z-index: 0;
+}
+
+.title-box {
+  position: absolute;
+  width: 200px;
+  height: 230px;
+  background-color: white;
+  top: 55vh;
+  left: 15px;
+  z-index: 1;
+}
+
+.title-box > h1 {
+  font-size: 70px;
+  font-weight: 900;
+  color: #000000;
+  letter-spacing: -1px;
+  word-spacing: -8px;
+}
+
+.clock-box {
+  font-size: 70px;
+  font-weight: 900;
+  background-color: #000000;
+  color: white;
+  letter-spacing: -1px;
+  word-spacing: -8px;
+}
+
+/* book */
+.book {
+  position: relative;
+  width: 665px;
+  height: 950px;
+  border-radius: 0px 20px 20px 0px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 30px #bebebe;
+  transition: transform 0.5s;
+  z-index: 10;
+}
+
+.paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* 원근감 */
+  perspective: 1500px;
+}
+.front,
+.back {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+  border-left: 1px solid rgb(255, 217, 0);
+}
+
+.back {
+  z-index: 0;
+}
+
+.front-content,
+.back-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-content {
+  transform: rotateY(180deg);
+}
+
+.book-cover {
+  background-image: url("../img/bookcover.jpg");
+  background-size: cover;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.book-cover > h1 {
+}
+.inner-pages {
+  background-image: url("../img/paper.png");
+  background-size: contain;
+  background-color: white;
+  width: 95%;
+  height: 96%;
+}
+#f1,
+#f4 {
+  border-radius: 0px 20px 20px 0px;
+}
+/* .bg1 {
+  background-image: url("../img/0.jpeg");
+  position: absolute;
+  z-index: 0;
+}
+.bg2 {
+  background-image: url("../img/1.jpeg");
+  position: absolute;
+  z-index: 0;
+}
+.bg3 {
+  background-image: url("../img/2.jpeg");
+  position: absolute;
+  z-index: 0;
+} */
+/* paper flip effect */
+.flipped .front,
+.flipped .back {
+  transform: rotateY(-180deg);
+}
+/* controller btns */
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.5s;
+  z-index: 20;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover i {
+  color: gray;
+}
+
+i {
+  font-size: 50px;
+  color: gray;
+}
+
+/* paper stack older */
+#p1 {
+  z-index: 3;
+}
+#p2 {
+  z-index: 2;
+}
+#p3 {
+  z-index: 1;
+}

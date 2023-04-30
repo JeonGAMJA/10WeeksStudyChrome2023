@@ -1,0 +1,91 @@
+.todo {
+  height: 500px;
+  width: 350px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgb(0, 153, 255);
+  padding: 10px;
+  overflow-x: scroll;
+  z-index: 6;
+  box-shadow: 5px 5px 15px #00000041;
+}
+
+#todo-form input {
+  width: 100%;
+  height: 50px;
+  font-size: 1em;
+  color: #000000;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#todo-list > li {
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.calender {
+  height: 400px;
+  width: 500px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(255, 255, 255);
+  z-index: 5;
+  box-shadow: 5px 5px 15px #00000041;
+}
+
+.calender img {
+  height: 400px;
+  width: 500px;
+  object-fit: cover;
+}
+
+.f3 {
+  position: relative;
+}
+.diary {
+  height: 850px;
+  width: 600px;
+  position: absolute;
+  bottom: 25px;
+  left: 15px;
+  padding: 60px 30px 30px 30px;
+}
+
+.diary h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: tomato;
+}
+
+.diary span {
+  line-height: 45px;
+}
+.photo {
+  height: 500px;
+  width: 250px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transform: rotateZ(-3deg);
+  background-image: url("../../img/photo.jpg");
+  background-size: cover;
+  z-index: 2;
+  box-shadow: 5px 5px 15px #00000041;
+}
+
+#weather {
+  position: absolute;
+  background-color: #000000;
+  color: white;
+  top: 115px;
+  left: 45px;
+  z-index: 2;
+  font-size: 20px;
+  font-weight: 500;
+}

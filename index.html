@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Diary</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/918a7c0be2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Previous Btn -->
+    <button id="prev-btn">
+      <i class="fas fa-arrow-circle-left"></i>
+    </button>
+    <!-- book -->
+    <div class="title-box">
+      <h1>MY DAYLY DIARY</h1>
+      <div class="clock-box">
+        <h1 id="luna"></h1>
+        <h1 id="year"></h1>
+        <h1 id="clock">00:00:00</h1>
+      </div>
+    </div>
+    <div id="book" class="book">
+      <!-- paper1 -->
+      <div id="p1" class="paper">
+        <div class="front">
+          <div id="f1" class="front-content book-cover"></div>
+        </div>
+        <div class="back">
+          <div id="b1" class="back-content book-cover"></div>
+        </div>
+      </div>
+      <!-- paper2 -->
+      <div id="p2" class="paper">
+        <div class="front">
+          <div id="f2" class="front-content inner-pages">
+            <div class="login">
+              <form id="login-form" class="hidden">
+                <!-- <h1 class="login-title">LOG IN</h1> -->
+                <input required maxlength="10" type="text" placeholder="name" />
+                <input type="submit" value="LOG IN" />
+              </form>
+              <h1 id="greeting" class="hidden"></h1>
+            </div>
+          </div>
+        </div>
+        <div class="back">
+          <div id="b2" class="back-content inner-pages">
+            <div class="today-info"></div>
+            <div class="todo">
+              <form id="todo-form">
+                <input
+                  type="text"
+                  placeholder="Write a To Do and Press Enter"
+                  required
+                />
+              </form>
+              <ul id="todo-list"></ul>
+            </div>
+            <div class="calender">
+              <img
+                src="https://png.pngtree.com/png-vector/20220730/ourmid/pngtree-january-2023-simple-calendar-png-image_6092529.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- paper3 -->
+      <div id="p3" class="paper">
+        <div class="front">
+          <div id="f3" class="front-content inner-pages">
+            <div class="diary">
+              <h1>DIARY</h1>
+              <span
+                >오늘은 친구들이랑 신촌에서 만나 놀았다. 거기서 레일로 메뉴를
+                서빙해주는 카페를 갔는데 대기만 무려 1시간.... 인고의 시간을
+                기다리고 들어갔는데 분위기가 정말 좋았다 음료랑 디저트맛은
+                그냥그랬음...ㅋㅋㅋ...........하지만 가운데 테이블에 레일이
+                돌고있었고 주문한 메뉴들이 레일을 돌며 서빙되고 있었고 그
+                가운데에는 큰 화면이 있는데 화연경관에 대한 영상이 주로 나왔던거
+                같다 화면 바로 위 천장에 화면크기만한 반사판이 붙어있었는데 그
+                반사판이 주변풍경을 반사시켜 공간이 더 입체감 있고 개방적이어
+                보였다. 암튼 인테리어 생각할수록 신기한듯? 그 뒤로는 풍자
+                또간집에 나왔었던 피자집에 나왔는데 너무 기대하고 가서
+                그런것일까 생각보다는 별로였다 따흐흑....그리고 양이 엄청 많았다
+                4명이서 갔는데 한판을 다 못먹었다..!! 피자를 다 먹고 나와선
+                어디서 놀까 고민하다가 클라이밍하는 체육관 같은곳을 갔는데 같은
+                일행에 클라이밍 경험자가 없으면 안된다고해서 애들과 다음을
+                기약하고 눈물을 머금으며 나왔다...그렇게 밖에서 한참을 걸어
+                다니다 뭘 했는지도 모르겠지만...밤 늦게 집에 왔던것같다 아
+                인생네컷 찍었었지 아무튼 재미있는 하루였다. 매일매일이 오늘만
+                같았으면 하는 나의 작은 욕심 ㅋㅋㅋㅋㅋ 아무튼 일기는 여기까지
+                안녕~ 2023년 1월 몇일인지는 모름 ㅋ</span
+              >
+            </div>
+            <div class="photo"></div>
+            <div id="weather">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="back">
+          <div id="b3" class="back-content inner-pages">
+            <div id="quote">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- paper4 -->
+      <div id="p4" class="paper">
+        <div class="front">
+          <div id="f4" class="front-content book-cover"></div>
+        </div>
+        <div class="back">
+          <div id="b4" class="back-content book-cover"></div>
+        </div>
+      </div>
+    </div>
+    <!-- next btn -->
+    <button id="next-btn">
+      <i class="fas fa-arrow-circle-right"></i>
+    </button>
+    <!-- <div class="book_wrapper">
+      <div class="book-bg">
+        <form class="login">
+          <input type="text" placeholder="아이디" />
+          <input type="password" placeholder="비밀번호" />
+          <input type="submit" class="login-btn" value="로그인" />
+        </form>
+      </div>
+    </div> -->
+  </body>
+  <script src="js/greeting.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+</html>
